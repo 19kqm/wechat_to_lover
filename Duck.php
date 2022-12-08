@@ -188,11 +188,12 @@ class Duck
     }
 
     /**
-     *
+     * H:i:s 
+     * .'天'.$hours.'小时'.$minutes.'分钟'.$seconds.'秒'
      */
     public function getTogetherDays()
     {
-        $now = strtotime(date("Y-m-d H:i:s"));
+        $now = strtotime(date("Y-m-d"));
         //计算两个日期之间的时间差
         $diff = abs($now - strtotime($this->togetherdays));
         //转换时间差的格式
@@ -202,7 +203,7 @@ class Duck
         $hours = floor(($diff - $days*60*60*24)  / (60*60));
         $minutes = floor(($diff - $days*60*60*24  - $hours*60*60)/ 60);
         $seconds = floor(($diff - $days*60*60*24  - $hours*60*60 - $minutes*60));
-        return $days.'天'.$hours.'小时'.$minutes.'分钟'.$seconds.'秒';
+        return $days;
     }
 
     public function getBirthday($birthday ='')
