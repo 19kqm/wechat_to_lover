@@ -193,7 +193,7 @@ class Duck
      */
     public function getTogetherDays()
     {
-        $now = strtotime(date("Y-m-d"));
+        $now = strtotime("+1 day",date("Y-m-d"));
         //计算两个日期之间的时间差
         $diff = abs($now - strtotime($this->togetherdays));
         //转换时间差的格式
