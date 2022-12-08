@@ -195,11 +195,11 @@ class Duck
     {
         $now = strtotime(date("Y-m-d"));
         //计算两个日期之间的时间差
-        $diff = abs($now - strtotime($this->togetherdays))+1;
+        $diff = abs($now - strtotime($this->togetherdays));
         //转换时间差的格式
         // $years = floor($diff / (365*60*60*24));
         // $months = floor(($diff - $years * 365*60*60*24)  / (30*60*60*24));
-        $days = floor(($diff)/ (60*60*24));
+        $days = floor(($diff)/ (60*60*24))+1;
         $hours = floor(($diff - $days*60*60*24)  / (60*60));
         $minutes = floor(($diff - $days*60*60*24  - $hours*60*60)/ 60);
         $seconds = floor(($diff - $days*60*60*24  - $hours*60*60 - $minutes*60));
