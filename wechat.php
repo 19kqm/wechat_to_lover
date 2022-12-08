@@ -26,7 +26,7 @@ $weekarray=array("日","一","二","三","四","五","六");
         'topcolor' => '#fdb3b0',
         'data' => [
             'date' => [
-                'value' => date('Y年n月j日 H时i分s秒'),
+                'value' => date('Y年n月j日 H时i分'),
                 'color' => '#5ecf3b'
             ],
             'week' => [
