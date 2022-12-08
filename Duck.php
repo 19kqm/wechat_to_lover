@@ -193,9 +193,9 @@ class Duck
      */
     public function getTogetherDays()
     {
-        $now = strtotime("+1 day",date("Y-m-d"));
+        $now = strtotime(date("Y-m-d"));
         //计算两个日期之间的时间差
-        $diff = abs($now - strtotime($this->togetherdays));
+        $diff = abs($now - strtotime($this->togetherdays))+1;
         //转换时间差的格式
         // $years = floor($diff / (365*60*60*24));
         // $months = floor(($diff - $years * 365*60*60*24)  / (30*60*60*24));
