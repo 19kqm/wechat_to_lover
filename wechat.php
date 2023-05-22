@@ -82,7 +82,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#e62b3b'
             ],
             'qinghua' => [//情话
-                'value' => $start->getqinghua()['情话'],
+                'value' => $start->getqinghua(),
                 'color' => '#e62b3b'
             ]
             
