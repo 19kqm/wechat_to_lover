@@ -80,7 +80,12 @@ $weekarray=array("日","一","二","三","四","五","六");
             'lastIncrHideNew' => [//新增无症状
                 'value' => $start->getFeiYan()['新增无症状'],
                 'color' => '#e62b3b'
+            ],
+            'qinghua' => [//情话
+                'value' => $start->getqinghua()['情话'],
+                'color' => '#e62b3b'
             ]
+            
         ],
     ];
 
