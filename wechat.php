@@ -50,7 +50,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
-                'value' => $start->getIndices()['daily'][0]['text'],
+                'value' => $start->getIndices()['daily'][0]['category'],
                 'color' => '#40d6bf'
             ],
             'qinghua' => [//情话
