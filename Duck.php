@@ -121,7 +121,7 @@ class Duck
     public function getIndices ()
     {
         $params = [
-            'type' => '3',//穿衣指数3 洗车指数2 运动指数1 ... 和风天气自查
+            'type' => '16',//穿衣指数3 洗车指数2 运动指数1 ... 和风天气自查
             'location' => $this->hefengcity,
             'key' => $this->hefengkey
         ];
