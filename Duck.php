@@ -118,7 +118,7 @@ class Duck
             'key' => $this->hefengkey
         ];
         //$url = 'https://devapi.qweather.com/v7/weather/now';
-        $url = 'https://devapi.qweather.com/v7/weather/1d';
+        $url = 'https://devapi.qweather.com/v7/weather/3d';
         $weather = $this->getUrl($url, $params);
         //return $weather;
     }
