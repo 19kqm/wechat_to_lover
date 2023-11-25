@@ -94,6 +94,7 @@ class Duck
 
     public function getQingHua ()
     {
+        
         $url = 'https://api.vvhan.com/api/love?type=json';
         $qinghua = $this->getUrl($url);
         if(!isset($qinghua['ishan']))
@@ -101,7 +102,7 @@ class Duck
             $qinghua = $this->getUrl('https://api.lovelive.tools/api/SweetNothings/Json?genderType=M');
             return $qinghua;
         }
-        return $qinghua['ishan'];
+
     }
 
     /**
@@ -230,6 +231,7 @@ class Duck
     /**
      * 新冠疫情
      */
+    
     public function getFeiYan()
     {
         $data = $this->getUrl('https://cdn.mdeer.com/data/yqstaticdata.js');
@@ -253,7 +255,7 @@ class Duck
 
 
     }
-
+    
     
 }
 
