@@ -33,14 +33,13 @@ class Duck
 
 
         $params = [
-            'adm' => $config['hefengcity'],//
-            'location' => $config['area'],
+            'location' => $config['hefengcity'],//
             'key' => $this->hefengkey
         ];
         $url = 'https://geoapi.qweather.com/v2/city/lookup';
         $CityID = $this->getUrl($url, $params);
         //var_dump($CityID);
-        $this->hefengcity = $CityID['location'][0]['adm'][0]['id'];
+        $this->hefengcity = $CityID['location'][0]['id'];
         //var_dump($this->hefengcity);
     }
 
