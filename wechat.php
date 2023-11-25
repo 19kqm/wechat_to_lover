@@ -53,10 +53,6 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'value' => $start->getIndices()['daily'][0]['category'],
                 'color' => '#40d6bf'
             ],
-            'qinghua' => [//情话
-                'value' => $start->getQingHua(),
-                'color' => '#eb5f76'
-            ],
             'birthday' => [//生日
                 'value' => $start->getBirthday(),
                 'color' => '#fdb3b0'
