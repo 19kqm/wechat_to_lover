@@ -42,7 +42,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#6ee5f6'
             ],
             'temp' => [ //温度
-                'value' => $start->getWeather()['daily']['tempMin'].'~'.['daily']['tempMax'].'℃',
+                'value' => $start->getWeather()['daily']['tempMin'].'℃',
                 'color' => '#5ecf3b'
             ],
             'humidity' => [//相对湿度
