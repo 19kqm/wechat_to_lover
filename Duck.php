@@ -217,6 +217,7 @@ class Duck
         {
             $birthday = $this->birthday;
         }
+        /*
         list($birthYear, $birthMonth, $birthDay) = explode('-', $birthday);
         //echo $birthDay;
         $birthday = date("Y") .'-'.$birthMonth.'-'.$birthDay;
@@ -229,6 +230,15 @@ class Duck
         $now = strtotime(date("Y-m-d"));
         $diff = abs($now - strtotime($birthday));
         $days = floor(($diff)/ (60*60*24));
+        */
+        $today_date = date("Y-m-d");                                              //今天日期
+	    $next_birth_date = date("Y") . "-" . date("m-d", strtotime($birthday)); //下一个生日日期
+        if ($next_birth_date < $today_date) //如果下一个生日日期已经过去了，就计算下一年的生日
+    	{
+    		$next_birth_date = date("Y", strtotime("+1 year")) . "-" . date("m-d", strtotime($birthday));
+    	}
+    	$diff = date_diff(date_create($birthday), date_create($next_birth_date)); //计算日期差
+    	$days = $diff->format("%a");
         return $days;
     }
 
