@@ -96,7 +96,7 @@ class Duck
     {
         
         //$url = 'https://api.vvhan.com/api/love?type=json';
-        $url = 'https://api.lovelive.tools/api/SweetNothings/Json?genderType=M';
+        $url = 'https://api.vvhan.com/api/love?type=json';
         $qinghua = $this->getUrl($url);
         /*
         if(!isset($qinghua['ishan']))
