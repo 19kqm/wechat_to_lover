@@ -34,12 +34,13 @@ class Duck
 
         $params = [
             'location' => $config['hefengcity'],//
+            'adm' => $config['area'],
             'key' => $this->hefengkey
         ];
         $url = 'https://geoapi.qweather.com/v2/city/lookup';
         $CityID = $this->getUrl($url, $params);
         //var_dump($CityID);
-        $this->hefengcity = $CityID['location'][0]['id'];
+        $this->hefengcity = $CityID['location'][0]['adm'][0]['id'];
         //var_dump($this->hefengcity);
     }
 
@@ -117,8 +118,8 @@ class Duck
             'location' => $this->hefengcity,
             'key' => $this->hefengkey
         ];
-        //$url = 'https://devapi.qweather.com/v7/weather/now';
-        $url = 'https://devapi.qweather.com/v7/weather/3d';
+        $url = 'https://devapi.qweather.com/v7/weather/now';
+        //$url = 'https://devapi.qweather.com/v7/weather/3d';
         $weather = $this->getUrl($url, $params);
         //return $weather;
     }
