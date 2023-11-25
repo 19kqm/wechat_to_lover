@@ -222,12 +222,12 @@ class Duck
         $birthday = date("Y") .'-'.$birthMonth.'-'.$birthDay;
         if(!(strtotime($birthday) > strtotime(date("Y-m-d"))))
         {
-            $birthday = date("Y")+1 .'-'.$birthMonth.'-'.$birthDay;
+            $birthday = date("Y") .'-'.$birthMonth.'-'.$birthDay;
         }
 
         //echo $this->birthday;
         $now = strtotime(date("Y-m-d"));
-        $diff = abs($now - strtotime($this->$birthday));
+        $diff = abs($now - strtotime($birthday));
         $days = floor(($diff)/ (60*60*24));
         return $days;
     }
