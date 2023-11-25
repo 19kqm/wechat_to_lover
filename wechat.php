@@ -22,7 +22,7 @@ $weekarray=array("日","一","二","三","四","五","六");
     $data = [
         'touser' => '',
         'template_id' => $start->getTemplateList()['template_list'][0]['template_id'],//默认只给第一个模板发消息
-        'url' => 'https://ozxc.cn',
+        //'url' => 'https://ozxc.cn',
         'topcolor' => '#fdb3b0',
         'data' => [
             'date' => [
@@ -38,15 +38,15 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#fda76f'
             ],
             'weather' => [ //天气现象
-                'value' => $start->getWeather()['daily'][0]['text'],
+                'value' => $start->getWeather()['now']['text'],
                 'color' => '#6ee5f6'
             ],
             'temp' => [ //温度
-                'value' => $start->getWeather()['daily'][0]['tempMin'].'℃',
+                'value' => $start->getWeather()['now']['temp'].'℃',
                 'color' => '#5ecf3b'
             ],
             'humidity' => [//相对湿度
-                'value' => $start->getWeather()['daily']['humidity'].'%',
+                'value' => $start->getWeather()['now']['humidity'].'%',
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
