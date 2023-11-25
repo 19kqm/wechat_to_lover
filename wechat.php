@@ -65,20 +65,6 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'value' => $start->getTogetherDays(),
                 'color' => '#8218e7'
             ],
-            'currentConfirm' => [//现有确诊
-                'value' => $start->getFeiYan()['现有确诊'],
-                'color' => '#ff6330'
-            ],
-        
-            'lastLocalSureNew' => [//新增确诊
-                'value' => $start->getFeiYan()['新增确诊'],
-                'color' => '#ff6330'
-            ],
-            'lastIncrHideNew' => [//新增无症状
-                'value' => $start->getFeiYan()['新增无症状'],
-                'color' => '#e62b3b'
-            ],
-        
             'qinghua' => [//情话
                 'value' => $start->getqinghua(),
                 'color' => '#e62b3b'
