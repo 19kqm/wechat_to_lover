@@ -95,14 +95,17 @@ class Duck
     public function getQingHua ()
     {
         
-        $url = 'https://api.vvhan.com/api/love?type=json';
+        //$url = 'https://api.vvhan.com/api/love?type=json';
+        $url = 'https://api.lovelive.tools/api/SweetNothings/Json?genderType=M';
         $qinghua = $this->getUrl($url);
+        /*
         if(!isset($qinghua['ishan']))
         {
             $qinghua = $this->getUrl('https://api.lovelive.tools/api/SweetNothings/Json?genderType=M');
             return $qinghua;
         }
-
+        */
+        return $qinghua;
     }
 
     /**
