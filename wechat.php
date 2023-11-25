@@ -15,7 +15,6 @@ require_once 'Duck.php';
 
 $ConfigPath = __DIR__.'/config.ini';
 $config = getConfig($ConfigPath);
-
 $start = new Duck($config);
 
 $weekarray=array("日","一","二","三","四","五","六");
@@ -50,7 +49,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
-                'value' => $start->strstr(getIndices()['daily'][0]['text'],'。'),
+                'value' => strstr($start->getIndices()['daily'][0]['text'],'。'),
                 'color' => '#40d6bf'
             ],
             'birthday' => [//生日
