@@ -46,11 +46,11 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#5ecf3b'
             ],
             'humidity' => [//相对湿度
-                'value' => $start->getWeather()['daily'][0]['humidity'].'%',
+                'value' => $start->getWeather()['daily']['humidity'].'%',
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
-                'value' => $start->getIndices()['daily'][0]['category'],
+                'value' => $start->getIndices(),
                 'color' => '#40d6bf'
             ],
             'birthday' => [//生日
