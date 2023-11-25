@@ -49,7 +49,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
-                'value' => strstr($start->getIndices()['daily'][0]['text'],'。'),
+                'value' => substr($start->getIndices()['daily'][0]['text'],0,strpos($start->getIndices()['daily'][0]['text'],'。')),
                 'color' => '#40d6bf'
             ],
             'birthday' => [//生日
