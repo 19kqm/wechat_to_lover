@@ -38,15 +38,15 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#fda76f'
             ],
             'weather' => [ //天气现象
-                'value' => $start->getWeather()['now']['text'],
+                'value' => $start->getWeather()['daily']['text'],
                 'color' => '#6ee5f6'
             ],
             'temp' => [ //温度
-                'value' => $start->getWeather()['now']['temp'],
+                'value' => $start->getWeather()['daily']['tempMin'].'~'.['daily']['tempMax'].'℃',
                 'color' => '#5ecf3b'
             ],
             'humidity' => [//相对湿度
-                'value' => $start->getWeather()['now']['humidity'].'%',
+                'value' => $start->getWeather()['daily']['humidity'].'%',
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
