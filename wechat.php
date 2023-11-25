@@ -50,7 +50,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'color' => '#949bd6'
             ],
             'indices' => [//指数
-                'value' => $start->getIndices()['daily'][0]['category'],
+                'value' => $start->getIndices()['daily'][0]['text'],
                 'color' => '#40d6bf'
             ],
             'birthday' => [//生日
