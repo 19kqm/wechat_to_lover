@@ -227,7 +227,7 @@ class Duck
 
         //echo $this->birthday;
         $now = strtotime(date("Y-m-d"));
-        $diff = abs($now - strtotime($birthday));
+        $diff = abs($now - strtotime($this->$birthday));
         $days = floor(($diff)/ (60*60*24));
         return $days;
     }
