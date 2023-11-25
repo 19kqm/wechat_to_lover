@@ -22,7 +22,7 @@ $weekarray=array("日","一","二","三","四","五","六");
     $data = [
         'touser' => '',
         'template_id' => $start->getTemplateList()['template_list'][0]['template_id'],//默认只给第一个模板发消息
-        'url' => 'https://ozxc.cn',
+        //'url' => 'https://ozxc.cn',
         'topcolor' => '#fdb3b0',
         'data' => [
             'date' => [
@@ -69,6 +69,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'value' => $start->getFeiYan()['现有确诊'],
                 'color' => '#ff6330'
             ],
+        /*
             'lastLocalSureNew' => [//新增确诊
                 'value' => $start->getFeiYan()['新增确诊'],
                 'color' => '#ff6330'
@@ -77,6 +78,7 @@ $weekarray=array("日","一","二","三","四","五","六");
                 'value' => $start->getFeiYan()['新增无症状'],
                 'color' => '#e62b3b'
             ],
+        */
             'qinghua' => [//情话
                 'value' => $start->getqinghua(),
                 'color' => '#e62b3b'
