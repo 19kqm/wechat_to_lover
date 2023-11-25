@@ -230,7 +230,7 @@ class Duck
 
     /**
      * 新冠疫情
-     */
+     
     
     public function getFeiYan()
     {
@@ -255,7 +255,7 @@ class Duck
 
 
     }
-    
+    */
     
 }
 
